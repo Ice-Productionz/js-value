@@ -1,7 +1,7 @@
 
 import {describe, it, before, after} from 'mocha';
 import {expect} from 'chai';
-import Url from "../../../../src/ValueObjects/Uri/Url";
+import Url from "../../../src/Uri/Url";
 
 
 describe('<Url />', () => {

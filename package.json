@@ -2,6 +2,17 @@
   "name": "iceproductionz-value",
   "version": "1.0.0",
   "private": false,
+  "nyc": {
+    "include": [
+      "src/**/*.js*"
+    ],
+    "reporter": [
+      "lcov",
+      "text"
+    ],
+    "sourceMap": false,
+    "instrument": false
+  },
   "scripts": {
     "test": "nyc mocha --require ./tests/setup.js --compilers js:babel-register --no-deprecation ./tests/spec/**/*Spec.js"
   },
