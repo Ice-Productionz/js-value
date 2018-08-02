@@ -11,7 +11,6 @@
     "semi": 2
   },
   "extends": [
-    "eslint:recommended",
-    "plugin:react/recommended"
+    "eslint:recommended"
   ]
 }
