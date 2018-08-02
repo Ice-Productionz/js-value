@@ -1,3 +1,20 @@
 language: node_js
 node_js:
 - "stable"
+
+script:
+- test
+
+after_success:
+# Submit coverage report to Coveralls servers, see .coveralls.yml
+- travis_retry php coveralls.phar -v
+# Submit coverage report to codecov.io
+- bash <(curl -s https://codecov.io/bash)
+
+after_script: NODE_ENV=test istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage
+
+# Tell Travis CI to monitor only 'master' branch
+branches:
+  only: master
+
+
