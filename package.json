@@ -8,7 +8,8 @@
     ],
     "reporter": [
       "lcov",
-      "text"
+      "text",
+      "clover"
     ],
     "sourceMap": false,
     "instrument": false
