@@ -21,3 +21,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.idea/inspectionProfiles/
+.idea/js-value.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/workspace.xml
+package-lock.json
