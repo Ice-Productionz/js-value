@@ -1,12 +1,6 @@
 import DateObject from "./Date";
 
 export default class Duration extends DateObject {
-
-    /**
-     * @type {int}
-     */
-    _value;
-
     /**
      *
      * @param {int} value

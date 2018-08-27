@@ -3,11 +3,6 @@ import DateObject from "./Date";
 export default class Datetime extends DateObject {
 
     /**
-     * @type {Date}
-     */
-    _value;
-
-    /**
      *
      * @param {Date} value
      */
